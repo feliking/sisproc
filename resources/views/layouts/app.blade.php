@@ -68,9 +68,10 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Proveedores</a>
                         <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="fa fa-puzzle-piece"></i><a href="">Producción</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="">Materiales</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="">Colorantes</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="">Auxiliares</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="{{ route('recipe.main') }}">Recetas</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="{{ route('material.main') }}">Materiales</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="{{ route('colorant.main') }}">Colorantes</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="{{ route('assistant.main') }}">Auxiliares</a></li>
                         </ul>
                     </li>
                     @endif

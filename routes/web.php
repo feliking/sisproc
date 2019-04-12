@@ -31,5 +31,14 @@ Route::group(['middleware' => ['auth', 'status']], function(){
         Route::get('/user/config/administrator', 'UserController@config')->name('user.config');
         Route::post('/user/update/admin', 'UserController@updateAdmin')->name('user.updateadmin');
     });
+    Route::get('/material/main', 'MaterialController@main')->name('material.main');
+    Route::resource('material', 'MaterialController');
+    Route::get('/colorant/main', 'ColorantController@main')->name('colorant.main');
+    Route::resource('colorant', 'ColorantController');
+    Route::get('/assistant/main', 'AssistantController@main')->name('assistant.main');
+    Route::resource('assistant', 'AssistantController');
+    Route::get('/recipe/main', 'RecipeController@main')->name('recipe.main');
+    Route::resource('recipe', 'RecipeController');
+
     
 });

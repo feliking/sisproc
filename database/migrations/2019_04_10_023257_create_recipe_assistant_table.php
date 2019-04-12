@@ -19,6 +19,7 @@ class CreateRecipeAssistantTable extends Migration
             $table->foreign('recipe_id')->references('id')->on('recipes');
             $table->unsignedInteger('assistant_id');
             $table->foreign('assistant_id')->references('id')->on('assistants');
+            $table->double('valor', 15, 2)->nullable();
             $table->timestamps();
         });
     }

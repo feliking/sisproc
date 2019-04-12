@@ -19,6 +19,7 @@ class CreateRecipeColorantTable extends Migration
             $table->foreign('recipe_id')->references('id')->on('recipes');
             $table->unsignedInteger('colorant_id');
             $table->foreign('colorant_id')->references('id')->on('colorants');
+            $table->double('valor', 15, 2)->nullable();
             $table->timestamps();
         });
     }

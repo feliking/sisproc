@@ -16,7 +16,6 @@ class CreateAssistantsTable extends Migration
         Schema::create('assistants', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->double('value', 15, 2);
             $table->timestamps();
         });
     }

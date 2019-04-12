@@ -16,7 +16,6 @@ class CreateColorantsTable extends Migration
         Schema::create('colorants', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->double('value', 15, 2);
             $table->timestamps();
         });
     }
